@@ -9,84 +9,257 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
+    - Hola
     - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Heyyy
+    - Hi anyone there?
+    - Hey ! need help
+
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
     - have a nice day
     - see you around
     - bye bye
     - see you later
+    - good by
+    - cee you later
+    - good night
 
 - intent: affirm
   examples: |
     - yes
-    - y
     - indeed
     - of course
     - that sounds good
     - correct
+    - Sure
+    - Ah, Absoloutely
+    - Yes , Indeed
 
 - intent: deny
   examples: |
     - no
-    - n
     - never
     - I don't think so
     - don't like that
     - no way
     - not really
+    - Sorry but no
+    - Sorry i dont think so
+    - I am sorry but its not possible to do that
+    - Cannot
+    - Dont think So
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+- intent: restaurant_search
+  examples : |
+    - I need to search a restaurant
+    - Restuarant
+    - I am looking for booking a restaurant
+    - Can you search for a restaurant
+    - hey i am looking for some restaurants
+    - please provide me a list of restaurants
+    - looking for some food points
+    - give me some food stalls
+    - i am hungry
+    - Where can i get good food
+    - I want to have something to eat
+    - please get me a list of restaurants
+    - please get me a list of restaurants near by
+    - get me some restaurants near me
+    - i am hungry get me some restaurants near by
+    - help me find some restaurants nearyby
+    - get me a list of restaurants
+    - please find me some restaurants
+    - i want to eat something please tell me some location near by
+    - please tell me some food points here
+    - get me some restaurants neary by
+    - get me some food points
+    - find some food places near to me
+    - get me some restaurants near to me
+    - i am looking for some food points
+    - i am looking for restaurants
+    - get me some flight details
+    - Hey, I am looking for a food.
+    - Hey, I am looking to eat something.
+    - i am hungry get me some restaurants near by
+    - please get me some restaurants near by
+    - please get me a list of all restaurants near by
+    - please get me all the restaurants near by
+    - please give me a list of restaurants
+    - get me a list of restaurants
+    - please find me some restaurants
+    - please get me a list of all restaurants
+    - get me a list of all restaurants near to me
+    - Hey, I am looking for a food.
+    - Hey, I am looking to eat something.
 
-- intent: mood_unhappy
+- intent: get_location
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - my preffered location will be bengaluru
+    - my location will be in mumbai
+    - my location will be in hyderabad
+    - i am looking in hyderabad
+    - hyderabad
+    - looking to eat in hyderabad
+    - get me some food in hyderabad
+    - i am looking to eat in mumbai
+    - my area is mumbai
+    - my location is hyderabad
+    - my prefered location is bengaluru
+    - my prefered location will be hyderabad
+    - my location will be noida
+    - my prefered location is chennai
+    - my location will be chennai
+    - my location is kerala
+    - my location is punjab
+    - my location will be mumbai
+    - i am living in mumbai
+    - my location will be hyderabad
+    - my location will be kerala
+    - my location is mumbai
+    - mumbai
+    - delhi
+    - my location will be in chennai
+    - i think i am near to hyderabad
+    - i am near to mumbai
+    - chennai
+    - punjab
+    - i am looking in borivali
+    - i am living in borivali
+    - my location will be in borivali
+    - madhapur
+    - i am living in madhapur...
+    - my location is andheri
+    - i am currently living in mumbai
+    - i am living near borivali
+    - borivali
+    - i am living in madhapur
+    - currently living in mumbai
+    - i am in mumbai
+    - this place seems to be close to hyderabad
+    - i feel this place is near to borivali
+    - i am near to chennai
+    - i think i am near to mumbai
+    - i am looking for restaurants in mumbai
+    - i am living in hyderabad
+    - I am at Madhapur
+    - I am at KPHB
+    - I live in Pune
+    - I live in Gurgaon
+    - I live in Lucknow
+    - I live in Noida
+    - My location is Noida
+    - My location is Mumbai
+    - My location is Navi Mumbai
+    - My location is Pune
+    - My location is Greater Noida
+    - yes its hyderabad
 
-- intent: bot_challenge
+- intent: get_cuisine
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - i would prefer to eat mexican
+    - i would love to eat italian
+    - i would like to have chinese food
+    - i would love to eat mexican food
+    - i would like to eat chinese
+    - please provide me north indian food
+    - please provide me italian food
+    - please give me mexican food
+    - please give me italian food
+    - please give me some thai food
+    - i will eat north indian food
+    - i would love to eat south indian food
+    - i will prefer south indian food
+    - i will prefer to have north indian
+    - i will eat chinese
+    - i would love to eat arabian food
+    - my choice will be arabian
+    - i would love to eat mexican
+    - i would like to have italian
+    - i would like to eat italian
+    - i would like to have chinese
+    - i will prefer chinese food
+    - i need italian food
+    - i would like to eat italian food
+    - i will prefer italian food
+    - i would love to eat chinese food
+    - i would love to eat chinese
+    - i would love to eat north indian food
+    - italian
+    - chinese
+    - thai
+    - i will prefer to eat chinese food
+    - i would love to eat italian food
+    - i will prefer australian then
+    - i will prefer australian
+    - i want to eat italian food
+    - i would like to eat Egyptian
+    - please provide me Egyptian food
+    - my choice will be Egyptian
+    - i would like to eat Greek
+    - please provide me Greek food
+    - my choice will be Greek
+    - i would like to eat Iranian
+    - please provide me Iranian food
+    - my choice will be Iranian
+    - i would like to eat Maharashtrian
+    - please provide me Maharashtrian food
+    - my choice will be Maharashtrian
+    - i would like to eat Rajasthani
+    - please provide me Rajasthani food
+    - my choice will be Rajasthani
+    - i would like to eat Seafood
+    - please provide me Seafood food
+    - my choice will be Seafood
+    - i would like to eat Street Food
+    - please provide me Street Food
+    - my choice will be Street Food
+    - i would like to eat Rolls
+    - please provide me Rolls food
+    - my choice will be Rolls
+    - Momos
+    - Kebab
+    - salads
+    - i would like to eat Kebab
+    - please provide me Kashmiri food
+    - my choice will be Healthy Food
+    - i would like to eat Momos
+    - please provide me Fusion food
+    - my choice will be Kashmiri
+    - i would like to eat Wraps
+    - please provide me Wraps
+    - my choice will be Wraps
+    - i would like to eat Healthy Food
+    - please provide me Mongolian food
+    - my choice will be Fusion
+    - i would like to eat Odia
+    - please provide me Odia food
+    - my choice will be Momos
+    - i would like to eat Belgian
+    - please provide me Belgian food
+    - pizza
+    - rolls
+    - Juices
+    - Tea
+    - my choice will be Juices
+    - i would like to have Juices
+    - my choice will be Tea
+    - i would like to have Tea
+    - Would love to have Healthy Food
+    - Would love Biryani
+    - Would love to have Starters
+    - Would have Mughlai
+    - Best Non Veg
+    - Would like to have Good Meat
+    - I would like to have Shawarnma
+    - I would love to have Best Biryani
+    - Would be delighted to have Pizza
+    - I would prefer Indian Cuisine
+    - Would go for South Indian Food
+    - Would like to have Vegetarian Food
+    - Would love to go for Spicy Chicken Dishes
+
+

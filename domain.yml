@@ -3,21 +3,33 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - restaurant_search
+  - get_location
+  - get_cuisine
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+
+entities:
+  -cuisine
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hello ! How are you doing today? "
+
+  utter_ask_location:
+  - text: "Can you please help me with your preferred location?"
+  - text: "Can you provide me with your location ? "
+
+  utter_ask_cuisine:
+  - text: "What cuisine you would like to have "
+  - text: "And your Cuisine too please ?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
+  utter_confirmation:
   - text: "Did that help you?"
 
   utter_happy:
@@ -28,6 +40,14 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+actions:
+
+- bot_find_location
+- bot_find_cusine_location
+- bot_show_restaurants
+- bot_book_another
+- bot_confirmation
 
 session_config:
   session_expiration_time: 60
