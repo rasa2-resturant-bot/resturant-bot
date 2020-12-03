@@ -7,27 +7,89 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
+  - restaurant_search
+  - telling_location_cuisine
+  - telling_location
+  - telling_cuisine
+  - telling_phonenum
+  - telling_numpeople
+  - telling_datetime
   - bot_challenge
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: Did that help you?
+  
+  utter_assist:
+  - text: Great ! I can help you to find restaurants based your preferred location
+      and cuisine.
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_ask_location_cuisine:
+  - text: Please share your location and cuisine you would like to have.
+
+  utter_ask_location:
+  - text: Can you please help me with your location?
+
+  utter_ask_cuisine:
+  - text: What cuisine you would like to binge :P.
+  
+  utter_affirm_info:
+  - text: Thanks for sharing the valuable information, let me check what I can find
+      for you.
+
+  utter_affirm_location:
+  - text: Thanks for sharing your location.
 
   utter_goodbye:
-  - text: "Bye"
+  - text: Bye. Have a great time.
+  - text: Bye Bye. See you soon.
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_itsok:
+  - text: It's completely fine ,I will try to get all types of restaurants for you.
+      Choose the one you like :)
+
+  utter_enter_cuisine_again:
+  - text: Sorry we couldn't find any {cuisine} cuisine in {location}. Would you like
+      to check some other cuisine?
+
+  utter_nosuch_cuisine_all_restaurants:
+  - text: We dint find any such cuisine that you are looking for. We will help you
+      by providing all the available restaurants.
+
+  utter_location_denied:
+  - text: I am sorry I can't help you without location. You can find out the location
+      and share with me else visit https://www.zomato.com/
+
+  utter_tryAfter_sometime:
+  - text: I am really sorry I can't help without the location. Please visit https://www.zomato.com/
+  - text: Sorry to disappoint you mate because I can't help you without location.
+      Please visit https://www.zomato.com/
+
+  utter_affirm_cuisine:
+  - text: Ahh, Thanks for sharing the cuisine. You have got a good taste :D
+  - text: Thanks mate, Even I like {cuisine}.
+  
+  utter_ask_for_booking:
+  - text: Would you like to do the table booking ?
+
+  utter_ask_num_people:
+  - text: please let me know the number of people coming.
+
+  utter_ask_phone_num:
+  - text: please share your contact number.
+
+  utter_ask_time:
+  - text: please specify date and time for your visit.
+
+  utter_slot_values:
+  - text: "The information recorded is:\n - num_people: {num_people}\n - phone_no:\
+      \ {phone_num}\n - date: {date_slot}\n - time: {time_slot}"
+
+  utter_submit:
+  - text: Thanks for all the booking information
+  
+  utter_default:
+  - text: Sorry, Didn’t understand. Please say again
 
 session_config:
   session_expiration_time: 60
