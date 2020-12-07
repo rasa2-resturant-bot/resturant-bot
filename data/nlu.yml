@@ -15,6 +15,26 @@ nlu:
     - Hi anyone there?
     - Hey ! need help
 
+- intent: mood
+  examples: |
+    - i am good
+    - i am fine
+    - i am okay
+    - all good
+    - Great
+    - i am great
+    - not so good
+    - all great
+    - Fine
+    - Doing ohk
+    - Doing Great
+    - i am doing superb
+    - super happy
+    - very good
+    - i am not sad
+    - Very lazy
+    - feeling lazy
+    - feeling happy today
 
 - intent: goodbye
   examples: |
@@ -95,171 +115,176 @@ nlu:
     - get me a list of all restaurants near to me
     - Hey, I am looking for a food.
     - Hey, I am looking to eat something.
+    - I need to book a table in a Restaurant
+    - Suggest me some Restaurants
+    - Please help me get best Restaurants
 
 - intent: get_location
   examples: |
-    - my preffered location will be bengaluru
-    - my location will be in mumbai
-    - my location will be in hyderabad
-    - i am looking in hyderabad
-    - hyderabad
-    - looking to eat in hyderabad
-    - get me some food in hyderabad
-    - i am looking to eat in mumbai
-    - my area is mumbai
-    - my location is hyderabad
-    - my prefered location is bengaluru
-    - my prefered location will be hyderabad
-    - my location will be noida
-    - my prefered location is chennai
-    - my location will be chennai
-    - my location is kerala
-    - my location is punjab
-    - my location will be mumbai
-    - i am living in mumbai
-    - my location will be hyderabad
-    - my location will be kerala
-    - my location is mumbai
-    - mumbai
-    - delhi
-    - my location will be in chennai
-    - i think i am near to hyderabad
-    - i am near to mumbai
-    - chennai
-    - punjab
-    - i am looking in borivali
-    - i am living in borivali
-    - my location will be in borivali
-    - madhapur
-    - i am living in madhapur...
-    - my location is andheri
-    - i am currently living in mumbai
-    - i am living near borivali
-    - borivali
-    - i am living in madhapur
-    - currently living in mumbai
-    - i am in mumbai
-    - this place seems to be close to hyderabad
-    - i feel this place is near to borivali
-    - i am near to chennai
-    - i think i am near to mumbai
-    - i am looking for restaurants in mumbai
-    - i am living in hyderabad
-    - I am at Madhapur
-    - I am at KPHB
-    - I live in Pune
-    - I live in Gurgaon
-    - I live in Lucknow
-    - I live in Noida
-    - My location is Noida
-    - My location is Mumbai
-    - My location is Navi Mumbai
-    - My location is Pune
-    - My location is Greater Noida
-    - yes its hyderabad
+    - my preffered location will be [bengaluru]("location")
+    - my location will be in [mumbai]("location")
+    - my location will be in [hyderabad]("location")
+    - i am looking in [Delhi]("location")
+    - [hyderabad]("location")
+    - looking to eat in [Delhi]("location")
+    - get me some food in [hyderabad]("location")
+    - i am looking to eat in [mumbai]("location")
+    - my area is [mumbai]("location")
+    - my location is [Delhi]("location")
+    - my prefered location is [bengaluru]("location")
+    - my prefered location will be [hyderabad]("location")
+    - my location will be [noida]("location")
+    - my prefered location is [chennai]("location")
+    - my location will be [chennai]("location")
+    - my location is [kerala]("location")
+    - my location is [punjab]("location")
+    - my location will be [mumbai]("location")
+    - i am living in [Greater Noida]("location")
+    - my location will be [Delhi]("location")
+    - my location will be [kerala]("location")
+    - my location is [mumbai]("location")
+    - [mumbai]("location")
+    - [delhi]("location")
+    - my location will be in [chennai]("location")
+    - i think i am near to [Bengaluru]("location")
+    - i am near to [mumbai]("location")
+    - [chennai]("location")
+    - [Bangalore]("location")
+    - i am looking in [Bangalore]("location")
+    - i am living in [Delhi]("location")
+    - my location will be in [Gurgaon]("location")
+    - [Bengaluru]("location")
+    - i am living in [Vishakhapatnam]("location")...
+    - my location is [Bengaluru]("location")
+    - i am currently living in [mumbai]("location")
+    - i am living near [lucknow]("location")
+    - [lucknow]("location")
+    - i am living in [jaipur]("location")
+    - currently living in [gurgaon]("location")
+    - i am in [jaipur]("location")
+    - this place seems to be close to [Noida]("location")
+    - i feel this place is near to [Greater Noida]("location")
+    - i am near to [chennai]("location")
+    - i think i am near to [mumbai]("location")
+    - i am looking for restaurants in [Kanpur]("location")
+    - i am living in [Kanpur]("location")
+    - I am at [Chandigarh]("location")
+    - I am at [Kolkata]("location")
+    - I live in [Pune]("location")
+    - I live in [Gurgaon]("location")
+    - I live in [Lucknow]("location")
+    - I live in [Delhi]("location")
+    - My location is [Hyderabad]("location")
+    - My location is [Mumbai]("location")
+    - My location is [Surat]("location")
+    - My location is [Pune]("location")
+    - My location is [Greater Noida]("location")
+    - yes its [hyderabad]("location")
 
 - intent: get_cuisine
   examples: |
-    - i would prefer to eat mexican
-    - i would love to eat italian
-    - i would like to have chinese food
-    - i would love to eat mexican food
-    - i would like to eat chinese
-    - please provide me north indian food
-    - please provide me italian food
-    - please give me mexican food
-    - please give me italian food
-    - please give me some thai food
-    - i will eat north indian food
-    - i would love to eat south indian food
-    - i will prefer south indian food
-    - i will prefer to have north indian
-    - i will eat chinese
-    - i would love to eat arabian food
-    - my choice will be arabian
-    - i would love to eat mexican
-    - i would like to have italian
-    - i would like to eat italian
-    - i would like to have chinese
-    - i will prefer chinese food
-    - i need italian food
-    - i would like to eat italian food
-    - i will prefer italian food
-    - i would love to eat chinese food
-    - i would love to eat chinese
-    - i would love to eat north indian food
-    - italian
-    - chinese
-    - thai
-    - i will prefer to eat chinese food
-    - i would love to eat italian food
-    - i will prefer australian then
-    - i will prefer australian
-    - i want to eat italian food
-    - i would like to eat Egyptian
-    - please provide me Egyptian food
-    - my choice will be Egyptian
-    - i would like to eat Greek
-    - please provide me Greek food
-    - my choice will be Greek
-    - i would like to eat Iranian
-    - please provide me Iranian food
-    - my choice will be Iranian
-    - i would like to eat Maharashtrian
-    - please provide me Maharashtrian food
-    - my choice will be Maharashtrian
-    - i would like to eat Rajasthani
-    - please provide me Rajasthani food
-    - my choice will be Rajasthani
-    - i would like to eat Seafood
-    - please provide me Seafood food
-    - my choice will be Seafood
-    - i would like to eat Street Food
-    - please provide me Street Food
-    - my choice will be Street Food
-    - i would like to eat Rolls
-    - please provide me Rolls food
-    - my choice will be Rolls
-    - Momos
-    - Kebab
-    - salads
-    - i would like to eat Kebab
-    - please provide me Kashmiri food
-    - my choice will be Healthy Food
-    - i would like to eat Momos
-    - please provide me Fusion food
-    - my choice will be Kashmiri
-    - i would like to eat Wraps
-    - please provide me Wraps
-    - my choice will be Wraps
-    - i would like to eat Healthy Food
-    - please provide me Mongolian food
-    - my choice will be Fusion
-    - i would like to eat Odia
-    - please provide me Odia food
-    - my choice will be Momos
-    - i would like to eat Belgian
-    - please provide me Belgian food
-    - pizza
-    - rolls
-    - Juices
-    - Tea
-    - my choice will be Juices
-    - i would like to have Juices
-    - my choice will be Tea
-    - i would like to have Tea
-    - Would love to have Healthy Food
-    - Would love Biryani
-    - Would love to have Starters
-    - Would have Mughlai
-    - Best Non Veg
-    - Would like to have Good Meat
-    - I would like to have Shawarnma
-    - I would love to have Best Biryani
-    - Would be delighted to have Pizza
-    - I would prefer Indian Cuisine
-    - Would go for South Indian Food
-    - Would like to have Vegetarian Food
-    - Would love to go for Spicy Chicken Dishes
+    - i would prefer to eat [mexican]("cuisine")
+    - i would love to eat [italian]("cuisine")
+    - i would like to have [chinese]("cuisine") food
+    - i would love to eat [mexican]("cuisine") food
+    - i would like to eat [chinese]("cuisine")
+    - please provide me [north indian]("cuisine") food
+    - please provide me [italian]("cuisine") food
+    - please give me [mexican]("cuisine") food
+    - please give me [italian]("cuisine") food
+    - please give me some [thai]("cuisine") food
+    - i will eat [north indian]("cuisine") food
+    - i would love to eat [south indian]("cuisine") food
+    - i will prefer [Rajasthani]("cuisine") food
+    - i will prefer to have [north indian]("cuisine")
+    - i will eat [chinese]("cuisine")
+    - i would love to eat [arabian]("cuisine") food
+    - my choice will be [arabian]("cuisine")
+    - i would love to eat [mexican]("cuisine")
+    - i would like to have [italian]("cuisine")
+    - i would like to eat [italian]("cuisine")
+    - i would like to have [lebanese]("cuisine")
+    - i will prefer [lebanese]("cuisine") food
+    - i need [italian]("cuisine") food
+    - i would like to eat [coastal]("cuisine") food
+    - i will prefer [sea]("cuisine") food
+    - i would love to eat [chinese]("cuisine") food
+    - i would love to eat [chinese]("cuisine")
+    - i would love to eat [north indian]("cuisine") food
+    - [italian]("cuisine")
+    - [chinese]
+    - [thai]("cuisine")
+    - [lebanese]("cuisine")
+    - [sea food]("cuisine")
+    - i will prefer to eat [chinese]("cuisine") food
+    - i would love to eat [italian]("cuisine") food
+    - i will prefer [australian]("cuisine") then
+    - i will prefer [mediterranian]("cuisine")
+    - i want to eat [italian]("cuisine") food
+    - i would like to eat [Egyptian]("cuisine")
+    - please provide me [Sea]("cuisine") food
+    - my choice will be [Egyptian]("cuisine")
+    - i would like to eat [Greek]("cuisine")
+    - please provide me [Greek]("cuisine") food
+    - my choice will be [Greek]("cuisine")
+    - i would like to eat [Iranian]("cuisine")
+    - please provide me [Iranian]("cuisine") food
+    - my choice will be [Iranian]("cuisine")
+    - i would like to eat [Maharashtrian]("cuisine")
+    - please provide me [Maharashtrian]("cuisine") food
+    - my choice will be [Maharashtrian]("cuisine")
+    - i would like to eat [Rajasthani]("cuisine")
+    - please provide me [Rajasthani]("cuisine") food
+    - my choice will be [Rajasthani]("cuisine")
+    - i would like to eat [Seafood]("cuisine")
+    - please provide me [Lebanese]("cuisine") food
+    - my choice will be [Seafood]("cuisine")
+    - i would like to eat [Street Food]("cuisine")
+    - please provide me [Street Food]("cuisine")
+    - my choice will be [Street Food]("cuisine")
+    - i would like to eat [Rolls]("cuisine")
+    - please provide me [Rolls]("cuisine") food
+    - my choice will be [Rolls]("cuisine")
+    - [Momos]("cuisine")
+    - [Kebab]("cuisine")
+    - [salads]("cuisine")
+    - i would like to eat [Kebab]("cuisine")
+    - please provide me [Kashmiri]("cuisine") food
+    - my choice will be [Healthy Food]("cuisine")
+    - i would like to eat [Momos]("cuisine")
+    - please provide me [Fusion food]("cuisine")
+    - my choice will be [Kashmiri]("cuisine")
+    - i would like to eat [Wraps]("cuisine")
+    - please provide me [Wraps]("cuisine")
+    - my choice will be [Wraps]("cuisine")
+    - i would like to eat [Healthy Food]
+    - please provide me [Sizzler]("cuisine")
+    - my choice will be [Fusion]("cuisine")
+    - i would like to eat [Odia]("cuisine")
+    - please provide me [Odia]("cuisine") food
+    - my choice will be [Momos]("cuisine")
+    - i would like to eat [Belgian]("cuisine")
+    - please provide me [Belgian]("cuisine") food
+    - [pizza]("cuisine")
+    - [rolls]("cuisine")
+    - [Juices]("cuisine")
+    - [Tea]("cuisine")
+    - my choice will be [Juices]("cuisine")
+    - i would like to have [Juices]("cuisine")
+    - my choice will be [Tea]("cuisine")
+    - i would like to have [Coffee]("cuisine")
+    - Would love to have [Healthy Food]("cuisine")
+    - Would love [Biryani]("cuisine")
+    - Would love to have [Starters]("cuisine")
+    - Would have [Mughlai]("cuisine")
+    - Best [Non Veg]("cuisine")
+    - Would like to have Good [Meat]("cuisine")
+    - I would like to have [Shawarnma]("cuisine")
+    - I would love to have Best [Biryani]("cuisine")
+    - Would be delighted to have [Pizza]("cuisine")
+    - I would prefer [Indian Cuisine]("cuisine")
+    - Would go for [South Indian]("cuisine") Food
+    - Would like to have [Vegetarian]("cuisine") Food
+    - Would love to go for [Spicy Chicken]("cuisine") Dishes
 
 

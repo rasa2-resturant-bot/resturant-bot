@@ -2,29 +2,31 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: normal booking
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: mood
+  - action: utter_help
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: get_location
+    entities:
+      - location
+  - action: utter_ask_cuisine
+  - intent: get_cuisine
+    entities:
+      - cuisine
+  - action: get
 
-- story: sad path 1
+- story: direct booking 1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: get_location
+    entities:
+      - location
+  - action: utter_ask_cuisine
+  - intent: get_cuisine
+    entities:
+      - cuisine
