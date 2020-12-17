@@ -1,88 +1,391 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
     - see you around
-    - bye bye
     - see you later
+    - bbye
+    - bye see you
+    - bbye take care
+    - bye tc
+    - bye take care see you soon
+    - bye see you soon
+    - bbye nice talking to you
+    - bye talk to you later
+    - bbye talk to you later
+    - bye meet you soon
+    - bbye meet you soon
+    - yes thank you
 
 - intent: affirm
   examples: |
     - yes
-    - y
     - indeed
     - of course
     - that sounds good
     - correct
+    - thanks
+    - thanks a lot
+    - yes thanks a lot
+    - yes it helped a lot..thanks
+    - yes it did,thanks a lot
+    - yup thanks
+    - yes thanks
+    - yes it did
+    - na
+    - its ok
+    - yes pleas
 
 - intent: deny
   examples: |
     - no
-    - n
     - never
+    - nothing
     - I don't think so
     - don't like that
     - no way
     - not really
+    - i dont know about my location
+    - i am not sure of my location
+    - i dont know
+    - i am new here
+    - i dont know what exactly this place is
+    - no  idea
+    - not sure
+    - can you help me with location i am new here
+    - nopes
+    - i dont know the location
+    - i am not sure of my location yet
+    - i am not sure
+    - i am not sure about it
+    - i am not sure actually
+    - actually i am new here so i dont know location
+    - please help me without cuisine
+    - no idea
+    - not sure about my cuisine
+    - dont know about cuisine
+    - i dont have any idea
+    - no idea about that
+    - no idea about it
+    - i am not sure about my location
+    - actually i really dont know i am new here
+    - actually i really don't know please help withut location
+    - i am new here i dont know location yet
+    - i really dont know
+    - i dont know my location
+    - dont know
+    - not sure actualy
+    - no thanks
+    - no its fine
+    - no its ok thanks a lot for your help
+    - no i dont want to do any booking
+    - no booking required
+    - fine without booking
+    - not required
+    - no just wanted to check out
+    - no booking please
 
-- intent: mood_great
+- intent: restaurant_search
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - please get me some restaurants near me
+    - please get me some restaurants
+    - i am looking for some restaurants  near me
+    - i am looking for some restaurants
+    - get me some restaurants
+    - looking for some restaurants
+    - get me some restaurants please
+    - hey i am looking for some restaurants
+    - looking for some restraunts
+    - get me few restaurants
+    - please provide me a list of restaurants
+    - looking for some food points
+    - i am hungry
+    - tell me some food points near to me
+    - give me some food stalls
+    - tell me some restaurants
+    - give me some restaurants
+    - get me a list of restaurants near to me
+    - provide me some restaurants
+    - hey can you help me to find some restaurants nearby
+    - please get me a list of restaurants
+    - please get me a list of restaurants near by
+    - please help me find some restaurants
+    - get me some restaurants near by
+    - get me some restaurants near me
+    - i am hungry get me some restaurants near by
+    - please get me some restaurants near by
+    - please get me a list of all restaurants near by
+    - please get me all the restaurants near by
+    - please give me a list of restaurants
+    - get me a list of restaurants
+    - please find me some restaurants
+    - please get me a list of all restaurants
+    - get me a list of all restaurants near to me
+    - tell me some restaurants here
+    - i am hungry please tell me some restaurants near to me
+    - i want to eat something please tell me some location near by
+    - please tell me some food points here
+    - get me some restaurants neary by
+    - get me some food points
+    - find some food places near to me
+    - get me some restaurants near to me
+    - i am looking for some food points
+    - i am looking for restaurants
+    - get me some flight details
+    - Hey, I am looking for a food.
+    - Hey, I am looking to eat something.
 
-- intent: mood_unhappy
+- intent: telling_cuisine
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - i would prefer to eat [mexican](cuisine)
+    - i would love to eat [italian](cuisine)
+    - i would like to have [chinese](cuisine) food
+    - i would love to eat [mexican](cuisine) food
+    - i would like to eat [chinese](cuisine)
+    - please provide me [north indian](cuisine) food
+    - please provide me [italian](cuisine) food
+    - please give me [mexican](cuisine) food
+    - please give me [italian](cuisine) food
+    - please give me some [thai](cuisine) food
+    - i will eat [north indian](cuisine) food
+    - i would love to eat [south indian](cuisine) food
+    - i will prefer [south indian](cuisine) food
+    - i will prefer to have [north indian](cuisine)
+    - i will eat [chinese](cuisine)
+    - i would love to eat [arabian](cuisine) food
+    - my choice will be [arabian](cuisine)
+    - i would love to eat [mexican](cuisine)
+    - i would like to have [italian](cuisine)
+    - i would like to eat [italian](cuisine)
+    - i would like to have [chinese](cuisine)
+    - i will prefer [chinese](cuisine) food
+    - i need [italian](cuisine) food
+    - i would like to eat [italian](cuisine) food
+    - i will prefer [italian](cuisine) food
+    - i would love to eat [chinese](cuisine) food
+    - i would love to eat [chinese](cuisine)
+    - i would love to eat [north indian](cuisine) food
+    - [italian](cuisine)
+    - [chinese](cuisine)
+    - [thai](cuisine)
+    - i will prefer to eat [chinese](cuisine) food
+    - i would love to eat [italian](cuisine) food
+    - [african](cuisine)
+    - [australian](cuisine)
+    - i will prefer [australian](cuisine) then
+    - i will prefer [australian](cuisine)
+    - i want to eat [italian](cuisine) food
+    - i would like to eat [Egyptian](cuisine)
+    - please provide me [Egyptian](cuisine) food
+    - my choice will be [Egyptian](cuisine)
+    - i would like to eat [Greek](cuisine)
+    - please provide me [Greek](cuisine) food
+    - my choice will be [Greek](cuisine)
+    - i would like to eat [Iranian](cuisine)
+    - please provide me [Iranian](cuisine) food
+    - my choice will be [Iranian](cuisine)
+    - i would like to eat [Maharashtrian](cuisine)
+    - please provide me [Maharashtrian](cuisine) food
+    - my choice will be [Maharashtrian](cuisine)
+    - i would like to eat [Rajasthani](cuisine)
+    - please provide me [Rajasthani](cuisine) food
+    - my choice will be [Rajasthani](cuisine)
+    - i would like to eat [Seafood](cuisine)
+    - please provide me [Seafood](cuisine) food
+    - my choice will be [Seafood](cuisine)
+    - i would like to eat [Street Food](cuisine)
+    - please provide me [Street Food](cuisine)
+    - my choice will be [Street Food](cuisine)
+    - i would like to eat [Rolls](cuisine)
+    - please provide me [Rolls](cuisine) food
+    - my choice will be [Rolls](cuisine)
+    - [Momos](cuisine)
+    - [Kebab](cuisine)
+    - [salads](cuisine)
+    - i would like to eat [Kebab](cuisine)
+    - please provide me [Kashmiri](cuisine) food
+    - my choice will be [Healthy Food](cuisine)
+    - i would like to eat [Momos](cuisine)
+    - please provide me [Fusion](cuisine) food
+    - my choice will be [Kashmiri](cuisine)
+    - i would like to eat [Wraps](cuisine)
+    - please provide me [Wraps](cuisine)
+    - my choice will be [Wraps](cuisine)
+    - i would like to eat [Healthy Food](cuisine)
+    - please provide me [Mongolian](cuisine) food
+    - my choice will be [Fusion](cuisine)
+    - i would like to eat [Odia](cuisine)
+    - please provide me [Odia](cuisine) food
+    - my choice will be [Momos](cuisine)
+    - i would like to eat [Belgian](cuisine)
+    - please provide me [Belgian](cuisine) food
+    - [pizza](cuisine)
+    - [rolls](cuisine)
+    - [Juices](cuisine)
+    - [Tea](cuisine)
+    - my choice will be [Juices](cuisine)
+    - i would like to have [Juices](cuisine)
+    - my choice will be [Tea](cuisine)
+    - i would like to have [Tea](cuisine)
+
+- intent: telling_location
+  examples: |
+    - my preffered location will be [bengaluru](location)
+    - my location will be in [mumbai](location)
+    - my location will be in [hyderabad](location)
+    - i am looking in [hyderabad](location)
+    - [hyderabad](location)
+    - [Delhi](location)
+    - [delhi](location)
+    - [chennai](location)
+    - [Ranchi](location)
+    - [ranchi](location)
+    - looking to eat in [hyderabad](location)
+    - get me some food in [hyderabad](location)
+    - i am looking to eat in [mumbai](location)
+    - my area is [mumbai](location)
+    - my location is [hyderabad](location)
+    - my prefered location is [bengaluru](location)
+    - my prefered location will be [hyderabad](location)
+    - my location will be [noida](location)
+    - my prefered location is [chennai](location)
+    - my location will be [chennai](location)
+    - my location is [kerala](location)
+    - my location is [punjab](location)
+    - my location will be [mumbai](location)
+    - i am living in [mumbai](location)
+    - my location will be hyderabad
+    - my location will be [kerala](location)
+    - my location is [mumbai](location)
+    - [mumbai](location)
+    - [delhi](location)
+    - my location will be in [chennai](location)
+    - i think i am near to [hyderabad](location)
+    - i am near to [mumbai](location)
+    - [chennai](location)
+    - [punjab](location)
+    - i am looking in [borivali](location)
+    - i am living in [borivali](location)
+    - my location will be in [borivali](location)
+    - [madhapur](location)
+    - i am living in [madhapur](location) ...
+    - my location is [andheri](location)
+    - i am currently living in [mumbai](location)
+    - i am living near [borivali](location)
+    - [borivali](location)
+    - i am living in [madhapur](location)
+    - currently living in [mumbai](location)
+    - i am in [mumbai](location)
+    - this place seems to be close to [hyderabad](location)
+    - i feel this place is near to [borivali](location)
+    - i am near to [chennai](location)
+    - i think i am near to [mumbai](location)
+    - i am looking for restaurants in [mumbai](location)
+    - i am living in [hyderabad](location)
+    - I am at [Madhapur](location)
+    - I am at [KPHB](location)
+    - yes its [hyderabad](location)
+
+- intent: telling_location_cuisine
+  examples: |
+    - i am looking for some [chinese](cuisine) food in [mumbai](location)
+    - i am looking for [italian](cuisine) food in [hyderabad](location)
+    - i am looking for some [chinese](cuisine) food in [hyderabad](location)
+    - [chinese](cuisine) food in [hyderabad](location)
+    - [italian](cuisine) food in [hyderabad](location)
+    - looking for [italian](cuisine) food in [hyderabad](location)
+    - will  try [south indian](cuisine) in [mumbai](location)
+    - would like to eat [mexican](cuisine) in [mumbai](location)
+    - i would like to eat [mexican](cuisine) in [kerala](location)
+    - i would love to eat [mexican](cuisine)  in [hyderabad](location)
+    - i would love to eat [italian](cuisine) in [hyderabad](location)
+    - will eat [arabian](cuisine) food in [hyderabad](location)
+    - will eat [thai](cuisine) in [hyderabad](location)
+    - would like to eat [mexican](cuisine) in [chennai](location)
+    - i will prefer to eat [italian](cuisine) food in [mumbai](location)
+    - i need [chinese](cuisine) food in [kerala](location)
+    - i will need some [south indian](cuisine) food in [bengaluru](location)
+    - i would love to eat [north indian](cuisine) food in [hyderabad](location)
+    - i am looking for [mexican](cuisine) food in [hyderabad](location)
+    - i am looking to eat [italian](cuisine) food in [chennai](location)
+    - i am looking to eat some [south indian](cuisine) food in [chennai](location)
+    - i am looking to eat [italian](cuisine) food in [hyderabad](location)
+    - i would like to eat [italian](cuisine) food in [hyderabad](location)
+    - i am looking to eat [chinese](cuisine) food in [chennai](location)
+    - i am looking for [italian](cuisine) food in [mumbai]
+    - i am looking to eat [south indian](cuisine) food in [chennai](location)
+    - i am looking to eat some [italian](cuisine) food in [mumbai](location)
+    - i am looking for some [italian](cuisine) food in [chennai](location)
+    - i am looking to eat something [chinese](cuisine) in [hyderabad](location)
+    - i am looking for [italian](cuisine) food in [madhapur](location)
+    - i am looking to eat [italian](cuisine) food in [mumbai](location)
+    - i would like to eat [north indian](cuisine) food in [hyderabad](location)
+    - i would like to eat [chinese](cuisine) food in [hyderabad](location)
+    - i would like to eat [chinese](cuisine) in [hyderabad](location)
+    - i would like to eat [italian](cuisine) in [hyderabad](location)
+    - i am looking to eat [italian](cuisine) food in [delhi](location)
+    - would like to eat [italian](cuisine) food in [hyderabad](location)
+    - i would like to eat [italian](cuisine) food in [delhi](location)
+    - i am looking to eat some [italian](cuisine) food in [chennai](location)
+    - i am looking to eat some [italian](cuisine) food in [kerala](location)
+    - i would love to have [chinese](cuisine) food in [chennai](location)
+    - i would like to eat [Egyptian](cuisine) in [delhi](location)
+    - please provide me [Egyptian](cuisine) food in [pune](location)
+    - my choice will be [Egyptian](cuisine) in [hyderabad](location)
+    - i would like to eat [Greek](cuisine) in [kerala](location)
+    - please provide me [Greek](cuisine) food in [delhi](location)
+    - my choice will be [Greek](cuisine) in [bengaluru](location)
+    - i would like to eat [Iranian](cuisine) in [jaipur](location)
+    - please provide me [Iranian](cuisine) food  in [hyderabad](location)
+    - my choice will be [Iranian](cuisine) in [pune](location)
+    - i would like to eat [Maharashtrian](cuisine) in [kerala](location)
+    - please provide me [Maharashtrian](cuisine) food in [jaipur](location)
+    - my choice will be [Maharashtrian](cuisine)in [delhi](location)
+    - i would like to eat [Rajasthani](cuisine) in [bengaluru](location)
+    - please provide me [Rajasthani](cuisine) food in [jaipur](location)
+    - my choice will be [Rajasthani](cuisine) in [kerala](location)
+    - i would like to eat [Seafood](cuisine) in [pune](location)
+    - please provide me [Seafood](cuisine) food in [bengaluru](location)
+    - my choice will be [Seafood](cuisine) in [kerala](location)
+    - i would like to eat [Street Food](cuisine) in [pune](location)
+    - please provide me [Street Food](cuisine) in [kerala](location)
+    - my choice will be [Street Food](cuisine) in [mumbai](location)
+    - i would like to eat [Rolls](cuisine) in [bengaluru](location)
+    - please provide me [Rolls](cuisine) food in [mumbai](location)
+    - my choice will be [Rolls](cuisine) in [bengaluru](location)
+    - [Momos](cuisine) in [delhi](location)
+    - [Kebab](cuisine) in [mumbai](location)
+    - [salads](cuisine) [in pune](location)
+    - i would like to eat [Kebab](cuisine) in [bengaluru](location)
+    - please provide me [Kashmiri](cuisine) food in [bhopal](location)
+    - my choice will be [Healthy Food](cuisine) in [Ranchi](location)
+    - i would like to eat [Momos](cuisine) in [pune](location)
+    - please provide me [Fusion](cuisine) food in [bhopal](location)
+    - my choice will be [Kashmiri](cuisine) in [jaipur](location)
+    - i would like to eat [Wraps](cuisine) in [mumbai](location)
+    - please provide me [Wraps](cuisine) in [jaipur](location)
+    - my choice will be [Wraps](cuisine) in [hyderabad](location)
+    - i would like to eat [Healthy Food](cuisine) in [bhopal](location)
+    - please provide me [Mongolian](cuisine) food in [jaipur](location)
+    - my choice will be [Fusion](cuisine) in [mumbai](location)
+    - i would like to eat [Odia](cuisine) in [bhopal](location)
+    - please provide me [Odia](cuisine) food in [hyderabad](location)
+    - my choice will be [Momos](cuisine) in [mumbai](location)
+    - i would like to eat [Belgian](cuisine) in [bhopal](location)
+    - please provide me [Belgian](cuisine) food in [pune](location)
+    - [pizza](cuisine) in [hyderabad](location)
+    - [rolls](cuisine) in [mumbai](location)
+    - [salads](cuisine) in [hyderabad](location)
+    - [Juices](cuisine) in [pune](location)
+    - [Tea](cuisine) in in [delhi](location)
+    - my choice will be [Juices](cuisine) in [hyderabad](location)
+    - i would like to have [Juices](cuisine) in [bhopal](location)
+    - my choice will be [Tea](cuisine) in [hyderabad](location)
+    - i would like to have [Tea](cuisine) in [mumbai](location)
+
 
 - intent: bot_challenge
   examples: |
