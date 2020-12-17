@@ -9,22 +9,69 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: fallback
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: bot_challenge
+  - action: action_default_fallback
 
-- story: sad path 2
+- story: story_of_chitchat
+  steps:
+  - intent: chitchat
+  - action: respond_chitchat
+
+- story: story_of_faq
+  steps:
+  - intent: faq
+  - action: respond_faq
+
+- story: 2greet_restaurantSearch_tellingLocation_tellingCuisine
   steps:
   - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - action: utter_assist
+  - action: Utter_ask_location
+  - intent: telling_location
+    entities:
+    - location: Hyderabad
+  - slot_was_set:
+      location: Hyderabad
+  - action: utter_ask_cuisine
+  - intent: telling_cuisine
+    entities:
+    - cuisine: chiniese
+  - slot_was_Set:
+      cuisine: chiniese
+  - action: action_show_restaurants
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: restaurantSearch_tellinglocation_tellingCuisine
+  steps:
+  - intent: restaurant_search
+  - action: utter_ask_location
+  - intent: telling_location
+    entities:
+    - location: Hyderabad
+  - slot_was_set:
+    - location: Hyderabad
+  - action: utter_ask_cuisine
+  - intent: telling_cuisine
+    entities:
+    - cuisine: chiniese
+  - slot_was_set:
+    - cuisine: chiniese
+  - action: action_show_restaurants
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: tellingLocationCuisine
+  steps:
+  - intent: telling_location_cuisine
+    entites:
+    - location: Hyderabad
+    - cuisien: chiniese
+  - slot_was_set:
+    - location: Hyderabad
+    - cuisine: chinese
+  - action: action_show_restaurants
+  - intent: goodbye
   - action: utter_goodbye
