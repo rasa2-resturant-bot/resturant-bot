@@ -24,7 +24,7 @@ slots:
     type: text
 responses:
   utter_happy:
-  - text: "Great, carry on!"x
+  - text: "Great, carry on!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."

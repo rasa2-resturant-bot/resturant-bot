@@ -2,27 +2,12 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: happy_path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-
-- story: fallback
-  steps:
-  - intent: bot_challenge
-  - action: action_default_fallback
-
-- story: story_of_chitchat
-  steps:
-  - intent: chitchat
-  - action: respond_chitchat
-
-- story: story_of_faq
-  steps:
-  - intent: faq
-  - action: respond_faq
 
 - story: 2greet_restaurantSearch_tellingLocation_tellingCuisine
   steps:
@@ -33,13 +18,13 @@ stories:
     entities:
     - location: Hyderabad
   - slot_was_set:
-      location: Hyderabad
+    - location: Hyderabad
   - action: utter_ask_cuisine
   - intent: telling_cuisine
     entities:
-    - cuisine: chiniese
-  - slot_was_Set:
-      cuisine: chiniese
+    - cuisine: chinese
+    - slot_was_Set:
+    - cuisine: chinese
   - action: action_show_restaurants
   - intent: goodbye
   - action: utter_goodbye
@@ -56,9 +41,9 @@ stories:
   - action: utter_ask_cuisine
   - intent: telling_cuisine
     entities:
-    - cuisine: chiniese
+    - cuisine: chinese
   - slot_was_set:
-    - cuisine: chiniese
+    - cuisine: chinese
   - action: action_show_restaurants
   - intent: goodbye
   - action: utter_goodbye
@@ -66,9 +51,9 @@ stories:
 - story: tellingLocationCuisine
   steps:
   - intent: telling_location_cuisine
-    entites:
+    entities:
     - location: Hyderabad
-    - cuisien: chiniese
+    - cuisine: chinese
   - slot_was_set:
     - location: Hyderabad
     - cuisine: chinese
