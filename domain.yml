@@ -3,28 +3,64 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - restaurant_search
+  - get_location
+  - get_cuisine
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - utter_help
+  - mood
+  - utter_conclusion
+  - utter_location_cuisine
+
+entities:
+  -cuisine
+  -location
+
+slots:
+  cuisine:
+    type: text
+  location:
+    type: text
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hello ! How are you doing today? "
+
+  utter_ask_location:
+  - text: "Can you please help me with your preferred location?"
+  - text: "Can you provide me with your location ? "
+  - text: "Please provide your Preferred location for Booking "
+
+  utter_conclusion:
+    - text: "Hope the information helped"
+    - text: " No problem, Thanks for having a chat"
+    - text : " Great. Nice taliking to you "
+
+  utter_help:
+  - text: "How can i help you ?"
+  - text: "How can i assist you today ?"
+
+  utter_ask_cuisine:
+  - text: "What cuisine you would like to have "
+  - text: "And your Cuisine too please ?"
+  - text: " What type of Food or Cuisine would you prefer?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
+  utter_confirmation:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Great, !"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "Goodbye , Have a great day ahead"
+  - text: "Nice talking to you , Bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
