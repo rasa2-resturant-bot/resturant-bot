@@ -12,12 +12,20 @@ stories:
   - action: utter_ask_location
   - intent: get_location
     entities:
-      - location
+      - location : Mumbai
+      - slot_was_set:
+        - location : Hyderabad
   - action: utter_ask_cuisine
   - intent: get_cuisine
     entities:
-      - cuisine
-  - action: get
+      - cuisine : Chinese
+      - slot_was_set:
+          - cuisine: Chinese
+  - action: action_show_restaurants
+  - intent: affirm
+  - action: utter_conclusion
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: direct booking 1
   steps:
@@ -25,8 +33,18 @@ stories:
   - action: utter_ask_location
   - intent: get_location
     entities:
-      - location
+      - location : Mumbai
+      - slot_was_set:
+        - location : Hyderabad
   - action: utter_ask_cuisine
   - intent: get_cuisine
     entities:
-      - cuisine
+      - cuisine : Chinese
+      - slot_was_set:
+          - cuisine: Chinese
+  - action: action_show_restaurants
+  - intent: affirm
+  - action: utter_conclusion
+  - intent: goodbye
+  - action: utter_goodbye
+

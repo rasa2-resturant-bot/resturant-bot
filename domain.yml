@@ -10,10 +10,18 @@ intents:
   - deny
   - utter_help
   - mood
+  - utter_conclusion
+  - utter_location_cuisine
 
 entities:
   -cuisine
   -location
+
+slots:
+  cuisine:
+    type: text
+  location:
+    type: text
 
 responses:
   utter_greet:
@@ -24,6 +32,11 @@ responses:
   - text: "Can you please help me with your preferred location?"
   - text: "Can you provide me with your location ? "
   - text: "Please provide your Preferred location for Booking "
+
+  utter_conclusion:
+    - text: "Hope the information helped"
+    - text: " No problem, Thanks for having a chat"
+    - text : " Great. Nice taliking to you "
 
   utter_help:
   - text: "How can i help you ?"
@@ -51,14 +64,6 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-actions:
-
-- bot_find_location
-- bot_find_cusine_location
-- bot_show_restaurants
-- bot_book_another
-- bot_confirmation
 
 session_config:
   session_expiration_time: 60

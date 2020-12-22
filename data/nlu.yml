@@ -287,4 +287,66 @@ nlu:
     - Would like to have [Vegetarian]("cuisine") Food
     - Would love to go for [Spicy Chicken]("cuisine") Dishes
 
+- intent: utter_location_cuisine
+  examples: |
+    - my preffered location will be [bengaluru]("location") and [Continental]("cuisine") food
+    - my location will be in [mumbai]("location") and cuisine would be [mexican]("cuisine")
+    - my location will be in [hyderabad]("location") and would eat [Italian]("cuisine")
+    - i am looking in [Delhi]("location") and prefer [Chinese]("cuisine") food
+    - [hyderabad]("location") and cuisine - [Lebanese]("cuisine")
+    - looking to eat in [Delhi]("location") and [Arabian]("cuisine") food
+    - get me some [Iranian]("cuisine") food in [hyderabad]("location")
+    - i am looking to eat [Mughlai]("cuisine") in [mumbai]("location")
+    - my area is [mumbai]("location") and cuisine would be [Seafood]("cuisine")
+    - my location is [Delhi]("location") and recommend me [Chinese]("cuisine") food
+    - my prefered location is [bengaluru]("location") and cuisine [Coastal]("cuisine")
+    - my prefered location will be [hyderabad]("location") and will be having [Biryani]("cuisine")
+    - my location will be [noida]("location") and would like to had [Momos]("cuisine")
+    - my prefered location is [chennai]("location") and food would be [Coastal]("cuisine")
+    - my location will be [chennai]("location") and would prefer [Mexican]("cuisine") cuisine
+    - my location is [Kolkata]("location") and cuisine would be [North Indian]("cuisine")
+    - my location is [Chandigarh]("location") and [Spicy Chicken]("cuisine") food
+    - my location will be [mumbai]("location") and [Rajasthani]("cuisine") food
+    - i am living in [Greater Noida]("location") and would eat [Biryani]("cuisine")
+    - my location will be [Delhi]("location") and cuisine type [Italian]("cuisine")
+    - my location will be [kerala]("location") and food would be [Shawarma]("cuisine")
+    - my location is [mumbai]("location") and [Streetfood]("cuisine") food
+    - [mumbai]("location") and [Odia]("cuisine")
+    - [delhi]("location") and [Kashmiri]("cuisine")
+    - my location will be in [chennai]("location") and cuisine [lebanese]("cuisine")
+    - i think i am near to [Bengaluru]("location") and would prefer [Vegetarian]("cuisine")
+    - i am near to [mumbai]("location") and would love to have [Maharashtrian]("cuisine")
+    - [chennai]("location") and cuisine [South Indain]("cuisine")
+    - [Bangalore]("location") and food type [Mughlai]("cuisine")
+    - i am looking in [Bangalore]("location") and [Non vegetarian]("cuisine") food only
+    - i am living in [Delhi]("location") and would have [Pizza]("cuisine")
+    - my location will be in [Gurgaon]("location")  and cuisine type - [Chinese]("cuisine")
+    - [Bengaluru]("location") and cuisine [Egyptian]("cuisine")
+    - i am living in [Vishakhapatnam]("location") and please suggest good [rolls]("cuisine") places
+    - my location is [Bengaluru]("location") and cuisine type [Mediterranian]("cuisine")
+    - i am currently living in [mumbai]("location") and would have [Biryani]("cuisine")
+    - i am living near [lucknow]("location") and would eat [Lebanese]("cuisine")
+    - [lucknow]("location") and [mexican]("cuisine")
+    - i am living in [jaipur]("location") and food would be [Chicken]("cuisine")
+    - currently living in [gurgaon]("location") and would like to have [Bengali]("cuisine") food
+    - i am in [jaipur]("location") and would eat [Japenese]("cuisine")
+    - this place seems to be close to [Noida]("location") and cuisine would be [Maharashtrian]("cuisine")
+    - i feel this place is near to [Greater Noida]("location") and [Rajasthani]("cuisine") food
+    - i am near to [chennai]("location") and only [Chinese]("cuisine") cuisine
+    - i think i am near to [mumbai]("location") and would love to have [North Indian]("cuisine") food
+    - i am looking for restaurants in [Kanpur]("location") having [Street Food]("cuisine") food
+    - i am living in [Kanpur]("location") and would like to have [Kebabs]("cuisine")
+    - I am at [Chandigarh]("location") and would be eating [Belgian]("cuisine")
+    - I am at [Kolkata]("location") and would have [Kashmiri]("cuisine") cuisine
+    - I live in [Pune]("location") would prefer [Rolls]("cuisine")
+    - I live in [Gurgaon]("location") and suggest me [Mediterranian]("cuisine") food
+    - I live in [Lucknow]("location") and would have [italian]("cuisine") food
+    - I live in [Delhi]("location") and will prefer [Iranian]("cuisine")
+    - My location is [Hyderabad]("location") and cuisine [Andhra]("cuisine")
+    - My location is [Mumbai]("location") and will have [Sea Food]("cuisine")
+    - My location is [Surat]("location") and [Gujrati]("cuisine") cuisine
+    - My location is [Pune]("location") with [Mughlai]("cuisine") food
+    - My location is [Greater Noida]("location") and will have [Biryani]("cuisine")
+    - yes its [hyderabad]("location") and will like to have [South Indian]("cuisine") food
+
 
